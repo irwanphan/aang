@@ -7,7 +7,7 @@ app.use(express.static("./dist/aang-one"));
 
 // Wait for a request to any path and redirect all of the requests to index.html.
 app.get("/*", function(req, res) {
-    res.sendFile("index.html", {root: "dist/<name-on-package.json>/"});
+    res.sendFile("index.html", {root: "dist/aang-one/"});
 });
 
 // app.listen(process.env.PORT || 8080);

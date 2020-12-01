@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aang": {
+    "aang-one": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/aang",
+            "outputPath": "dist/aang-one",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "aang:build"
+            "browserTarget": "aang-one:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "aang:build:production"
+              "browserTarget": "aang-one:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "aang:build"
+            "browserTarget": "aang-one:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "aang:serve"
+            "devServerTarget": "aang-one:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "aang:serve:production"
+              "devServerTarget": "aang-one:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "aang"
+  "defaultProject": "aang-one"
 }
